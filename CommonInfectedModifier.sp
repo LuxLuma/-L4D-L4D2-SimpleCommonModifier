@@ -30,12 +30,12 @@ new Float:g_iImultiplyer;
 
 public OnPluginStart()
 {
-	hCvar_DmgEnable = CreateConVar("nb_damage_enable", "1", "Should We Enable Common Damage Modifing", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	hCvar_HealthEnable = CreateConVar("nb_health_enable", "1", "Should We Enable Common Health Modifing", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	hCvar_Damage = CreateConVar("nb_damage", "2.0", "Damage Modifier Value", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 9999.0);
-	hCvar_IncapMulti = CreateConVar("nb_damage_modifier", "3.0", "Incapped Damage Multiplyer Value", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 9999.0);
-	hCvar_MinHp = CreateConVar("nb_hp_min", "40", "Incapped Damage Multiplyer Value", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 999999.0);
-	hCvar_MaxHp = CreateConVar("nb_hp_max", "70", "Incapped Damage Multiplyer Value", FCVAR_PLUGIN|FCVAR_NOTIFY, true, 0.0, true, 999999.0);
+	hCvar_DmgEnable = CreateConVar("nb_damage_enable", "1", "Should We Enable Common Damage Modifing", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	hCvar_HealthEnable = CreateConVar("nb_health_enable", "1", "Should We Enable Common Health Modifing", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	hCvar_Damage = CreateConVar("nb_damage", "2.0", "Damage Modifier Value", FCVAR_NOTIFY, true, 0.0, true, 9999.0);
+	hCvar_IncapMulti = CreateConVar("nb_damage_modifier", "3.0", "Incapped Damage Multiplyer Value", FCVAR_NOTIFY, true, 0.0, true, 9999.0);
+	hCvar_MinHp = CreateConVar("nb_hp_min", "40", "Incapped Damage Multiplyer Value", FCVAR_NOTIFY, true, 0.0, true, 999999.0);
+	hCvar_MaxHp = CreateConVar("nb_hp_max", "70", "Incapped Damage Multiplyer Value", FCVAR_NOTIFY, true, 0.0, true, 999999.0);
 	
 	HookConVarChange(hCvar_DmgEnable, eConvarChanged);
 	HookConVarChange(hCvar_HealthEnable, eConvarChanged);
