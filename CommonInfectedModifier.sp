@@ -8,7 +8,7 @@
 public Plugin:myinfo =
 {
     name = "[L4D/L4D2]CommonInfectedModifier",
-    author = "Ludastar (Armonic)",
+    author = "Lux",
     description = "Lets you Choose your own custom damage for Common Infected",
     version = PLUGIN_VERSION,
     url = "http://steamcommunity.com/id/ArmonicJourney"
