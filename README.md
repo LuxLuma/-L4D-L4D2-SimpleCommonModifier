@@ -1,1 +1,1 @@
-# [L4D/L4D2]SimpleCommonModifier
+https://forums.alliedmods.net/showthread.php?p=2420661
